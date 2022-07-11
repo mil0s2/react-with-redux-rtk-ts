@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import expenseReducer from "./features/expensesSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    expense: expenseReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;

@@ -55,3 +55,12 @@ export const expensesSlice = createSlice({
     },
   },
 });
+
+export const {
+  addExpenseToHistory,
+  calculateBalance,
+  calculateIncome,
+  calculateExpenses,
+} = expensesSlice.actions;
+
+export default expensesSlice.reducer;
